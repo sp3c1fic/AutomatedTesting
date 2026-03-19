@@ -10,10 +10,13 @@ namespace Testing
     using OpenQA.Selenium.Firefox;
     using OpenQA.Selenium.Safari;
 
-    //TODO Add checks to ensure that Ensure that the instance hasn't yet been
+    // TODO Add checks to ensure that Ensure that the instance hasn't yet been
     // initialized by another thread while this one
     // has been waiting for the lock's release.
 
+    /// <summary>
+    /// Main driver class responsible for the Selenium Web Driver initialization.
+    /// </summary>
     public class Driver
     {
         private static IWebDriver? driver;
@@ -23,6 +26,11 @@ namespace Testing
             // Private constructor to prevent instantiation
         }
 
+        /// <summary>
+        /// The method which initializes the web driver.
+        /// </summary>
+        /// <param name="driverName">This method takes only one parameter i.e. the driver name which translates to the driver type that is to be initialized.</param>
+        /// <returns>IWebDriver.</returns>
         public static IWebDriver GetDriver(string driverName)
         {
             if (driver == null)
