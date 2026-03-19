@@ -1,0 +1,101 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22466AE2-74D8-4124-B3A1-626305DC33F7}|Testing\\Testing.csproj|c:\\users\\stjimmyyy\\source\\repos\\testing\\testing\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22466AE2-74D8-4124-B3A1-626305DC33F7}|Testing\\Testing.csproj|solutionrelative:testing\\loginpage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{036C3713-4AA2-4215-AC75-6FF211AAE089}|QABrainsTests\\QABrainsTests.csproj|c:\\users\\stjimmyyy\\source\\repos\\testing\\qabrainstests\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{036C3713-4AA2-4215-AC75-6FF211AAE089}|QABrainsTests\\QABrainsTests.csproj|solutionrelative:qabrainstests\\tests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22466AE2-74D8-4124-B3A1-626305DC33F7}|Testing\\Testing.csproj|c:\\users\\stjimmyyy\\source\\repos\\testing\\testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22466AE2-74D8-4124-B3A1-626305DC33F7}|Testing\\Testing.csproj|solutionrelative:testing\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{22466AE2-74D8-4124-B3A1-626305DC33F7}|Testing\\Testing.csproj|c:\\users\\stjimmyyy\\source\\repos\\testing\\testing\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22466AE2-74D8-4124-B3A1-626305DC33F7}|Testing\\Testing.csproj|solutionrelative:testing\\driver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Tests.cs",
+              "DocumentMoniker": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\QABrainsTests\\Tests.cs",
+              "RelativeDocumentMoniker": "QABrainsTests\\Tests.cs",
+              "ToolTip": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\QABrainsTests\\Tests.cs",
+              "RelativeToolTip": "QABrainsTests\\Tests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T12:54:12.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Driver.cs",
+              "DocumentMoniker": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\Testing\\Driver.cs",
+              "RelativeDocumentMoniker": "Testing\\Driver.cs",
+              "ToolTip": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\Testing\\Driver.cs",
+              "RelativeToolTip": "Testing\\Driver.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:19:23.649Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LoginPage.cs",
+              "DocumentMoniker": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\Testing\\LoginPage.cs",
+              "RelativeDocumentMoniker": "Testing\\LoginPage.cs",
+              "ToolTip": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\Testing\\LoginPage.cs",
+              "RelativeToolTip": "Testing\\LoginPage.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T08:13:14.988Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\Testing\\Program.cs",
+              "RelativeDocumentMoniker": "Testing\\Program.cs",
+              "ToolTip": "C:\\Users\\stjimmyyy\\source\\repos\\Testing\\Testing\\Program.cs",
+              "RelativeToolTip": "Testing\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T19:22:03.55Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
