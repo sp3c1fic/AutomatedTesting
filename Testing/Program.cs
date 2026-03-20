@@ -5,17 +5,21 @@ IWebDriver webDriver = Driver.GetDriver("chrome");
 
 try
 {
-    var loginPage = new LoginPage(webDriver);
+    // var loginPage = new LoginPage(webDriver);
+
     var mainPage = new MainPage(webDriver);
 
     Logger.ConfigureLogger();
 
-    //loginPage
+    // loginPage
     //    .Open()
     //    .Login("test@qabrains.com", "Password123");
 
     mainPage
-        .Open();
+        .Open()
+
+        // .AddToFavourites.
+        .NavigateToFavourites();
 }
 catch (Exception ex)
 {

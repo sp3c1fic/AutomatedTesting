@@ -39,7 +39,8 @@ namespace Testing
                 switch (driverName.ToLower())
                 {
                     case "chrome":
-                        driver = new ChromeDriver();
+                        var options = ConfigureDriverOptions();
+                        driver = new ChromeDriver(options);
                         break;
                     case "edge":
                         driver = new EdgeDriver();
@@ -55,16 +56,21 @@ namespace Testing
                 }
             }
 
-            ConfigureDriverOptions();
-
             return driver!;
         }
 
-        private static void ConfigureDriverOptions()
+        private static ChromeOptions ConfigureDriverOptions()
         {
             var driverType = driver?.GetType();
 
+            var options = new ChromeOptions();
+
+            options.AddArgument("--start-maximized");
+
+            // TODO replace with logging
             Console.WriteLine(driverType);
+
+            return options;
         }
     }
 }

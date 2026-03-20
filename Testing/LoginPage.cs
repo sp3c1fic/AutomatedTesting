@@ -69,7 +69,7 @@ namespace Testing
 
             WebDriverUtils.InteractWithInputElement(actions, emailInputField, emailText);
             WebDriverUtils.InteractWithInputElement(actions, passwordInputField, passwordText);
-            WebDriverUtils.InteractWithLoginSubmitButton(actions, submitButton);
+            WebDriverUtils.InteractWithSubmitWithButton(actions, submitButton);
 
             var loginResult = this.IsLoginSuccessful();
 

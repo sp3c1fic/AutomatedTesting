@@ -6,6 +6,7 @@ namespace Testing
 {
     using OpenQA.Selenium;
     using OpenQA.Selenium.Interactions;
+    using OpenQA.Selenium.Support.UI;
 
     /// <summary>
     /// Helper class that will keep repetitive functions necessary for all kinds of operations such as interacting with web elements and so on.
@@ -31,8 +32,8 @@ namespace Testing
         /// Helper method that interacts with submit buttons on the webpage.
         /// </summary>
         /// <param name="actions">The Actions class which provides mechanism for advanced interaction with the browser.</param>
-        /// <param name="submitButton">The submit button which will be interacted with.</param>
-        public static void InteractWithSubmitButton(Actions actions, IWebElement submitButton)
+        /// <param name="submitButton">The button which will be interacted with.</param>
+        public static void InteractWithSubmitWithButton(Actions actions, IWebElement submitButton)
         {
             actions
                 .Click(submitButton)
