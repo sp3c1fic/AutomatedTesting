@@ -14,6 +14,9 @@
              this.driver = new ChromeDriver();
         }
 
+        /// <summary>
+        /// Method that tests whether a login attempt with a wrong username was unsuccesssful.
+        /// </summary>
         [Test]
         public void LoginTestWithWrongUsername()
         {
@@ -28,6 +31,9 @@
             Assert.That(failedLoginReason, Is.EqualTo("Username is incorrect."));
         }
 
+        /// <summary>
+        /// Method that tests whether a login attempt with a wrong password was unsuccessful.
+        /// </summary>
         [Test]
         public void LoginTestWithWrongPassword()
         {
@@ -42,6 +48,9 @@
             Assert.That(failedLoginReason, Is.EqualTo("Password is incorrect."));
         }
 
+        /// <summary>
+        /// Method that tests whether a login attempt with both wrong username and password was unsuccessful.
+        /// </summary>
         [Test]
         public void LoginTestWithWrongUsernameAndPassword()
         {
@@ -58,6 +67,9 @@
             Assert.That(failedLoginReasons[^1], Is.EqualTo("Password is incorrect."));
         }
 
+        /// <summary>
+        /// Method that tests wether a login attempt with correct credentials was actually successful.
+        /// </summary>
         [Test]
         public void LoginTestWithCorrectCredentials()
         {
@@ -72,6 +84,9 @@
             Assert.That(successfulLoginReason, Is.EqualTo("Login was successful"));
         }
 
+        /// <summary>
+        /// Standard TearDown method which closes the WebDriver when tests have been executed.
+        /// </summary>
         [TearDown]
         public void TearDown()
         {

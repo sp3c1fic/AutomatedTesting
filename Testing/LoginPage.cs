@@ -4,6 +4,7 @@
 
 namespace Testing
 {
+    using log4net;
     using OpenQA.Selenium;
     using OpenQA.Selenium.Interactions;
     using OpenQA.Selenium.Support.UI;
@@ -24,6 +25,7 @@ namespace Testing
         private const string FailedLoginNotificationCssSelectorLocator = "p.text-red-500";
         private const string ProductSortIdLocator = "product-sort";
 
+        private static readonly ILog Log = LogManager.GetLogger(typeof(Logger));
         private readonly IWebDriver webDriver;
         private readonly WebDriverWait wait;
 
@@ -33,7 +35,7 @@ namespace Testing
         /// <param name="webDriver"> The instance of the web driver element passed as a parameter. </param>
         public LoginPage(IWebDriver webDriver)
         {
-            this.webDriver = webDriver ?? throw new ArgumentException(nameof(webDriver));
+            this.webDriver = webDriver ?? throw new ArgumentNullException(nameof(webDriver));
             this.wait = new WebDriverWait(this.webDriver, TimeSpan.FromSeconds(2));
         }
 
@@ -65,10 +67,9 @@ namespace Testing
 
             var actions = new Actions(this.webDriver);
 
-            InteractWithInputElement(actions, emailInputField, emailText);
-            InteractWithInputElement(actions, passwordInputField, passwordText);
-
-            InteractWithLoginSubmitButton(actions, submitButton);
+            WebDriverUtils.InteractWithInputElement(actions, emailInputField, emailText);
+            WebDriverUtils.InteractWithInputElement(actions, passwordInputField, passwordText);
+            WebDriverUtils.InteractWithLoginSubmitButton(actions, submitButton);
 
             var loginResult = this.IsLoginSuccessful();
 
@@ -77,34 +78,17 @@ namespace Testing
             return loginResult;
         }
 
-        private static void InteractWithLoginSubmitButton(Actions actions, IWebElement submitLoginButton)
-        {
-            actions
-                .Click(submitLoginButton)
-                .Pause(TimeSpan.FromSeconds(2))
-                .Perform();
-        }
-
-        private static void InteractWithInputElement(Actions actions, IWebElement inputElement, string inputElementText)
-        {
-            actions
-                .Click(inputElement)
-                .Pause(TimeSpan.FromSeconds(2))
-                .SendKeys(inputElementText)
-                .Perform();
-        }
-
         private static void GetLoginResults((bool, List<string>) loginResult)
         {
-            Console.WriteLine($"Result from login: {loginResult.Item1}");
-            Console.WriteLine($"Number of reasons: {loginResult.Item2.Count}");
+            Log.Info($"Result from login: {loginResult.Item1}");
+            Log.Info($"Number of reasons: {loginResult.Item2.Count}");
 
             if (!loginResult.Item1 && loginResult.Item2.Count > 0)
             {
-                Console.WriteLine($" Reasons:");
+                Log.Info($" Reasons:");
                 foreach (var failedLoginReason in loginResult.Item2)
                 {
-                    Console.WriteLine($" - {failedLoginReason}");
+                    Log.Info($" - {failedLoginReason}");
                 }
             }
         }
